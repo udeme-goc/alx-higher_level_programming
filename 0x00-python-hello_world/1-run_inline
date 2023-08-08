@@ -1,4 +1,2 @@
 #!/bin/bash
-
-# Pass the value of the file as a string
-python3 -c "$PYCODE"
+python3 -c "$PYCODE" # Pass the value of the file as a string
