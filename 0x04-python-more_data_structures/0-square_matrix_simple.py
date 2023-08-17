@@ -27,10 +27,3 @@ def square_matric_simple(matrix=[]):
         new_matrix.append(new_row)
 
     return new_matrix
-
-
-
-
-
-
-
