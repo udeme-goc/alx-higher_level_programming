@@ -15,4 +15,3 @@ def safe_print_integer(value):
         return True  # Return True if successful
     except (ValueError, TypeError):
         return False  # Return False if the value cannot be formatted as an integer
-
