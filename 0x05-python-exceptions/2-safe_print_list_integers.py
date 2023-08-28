@@ -4,13 +4,6 @@
 def safe_print_list_integers(my_list=[], x=0):
     """
     Prints the first x integers from a given list.
-
-    Args:
-        my_list (list): List containing elements of any type.
-        x (int): Number of elements to print as integers.
-
-    Returns:
-        int: Number of successfully printed integers.
     """
     # Initialize a counter variable
     i = 0

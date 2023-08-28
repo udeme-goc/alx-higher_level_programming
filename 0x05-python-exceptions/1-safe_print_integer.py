@@ -2,13 +2,7 @@
 
 def safe_print_integer(value):
     """
-    Safely prints an integer value.
-
-    Args:
-        value: The value to be printed.
-
-    Returns:
-        bool: True if value is an integer and is successfully printed, False otherwise.
+    Safely prints an integer value..
     """
     try:
         print("{:d}".format(value))  # Try to print the integer value
