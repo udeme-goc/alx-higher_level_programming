@@ -1,35 +1,22 @@
 #!/usr/bin/python3
+"""writing a docstring"""
 import math
 
+
 class MagicClass:
-    """
-    This is the MagicClass documentation.
-    """
+    """set up the magic"""
+
     def __init__(self, radius=0):
-        """
-        Initializes a new MagicClass instance.
-
-        Args:
-            radius (int or float): The radius of the circle. Defaults to 0.
-        """
+        """ writing another docstring """
+        self.__radius = 0
         if type(radius) is not int and type(radius) is not float:
-            raise TypeError("radius must be a number")
+            raise TypeError('radius must be a number')
         self.__radius = radius
-    
+
     def area(self):
-        """
-        Computes the area of the circle.
-
-        Returns:
-            float: The area of the circle.
-        """
+        """again with the docstring"""
         return self.__radius ** 2 * math.pi
-    
-    def circumference(self):
-        """
-        Computes the circumference of the circle.
 
-        Returns:
-            float: The circumference of the circle.
-        """
+    def circumference(self):
+        """such docstring"""
         return 2 * math.pi * self.__radius
