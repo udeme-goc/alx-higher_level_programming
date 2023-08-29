@@ -4,4 +4,3 @@
 
 class Square:
     """ This is the Square class documentation. """
-    pass
