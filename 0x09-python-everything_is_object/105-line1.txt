@@ -1,0 +1,2 @@
+None.
+When you use small integers in your code (as is the case with the line print("I")), Python does not create new integer objects for them; instead, it references the preallocated cached integers.
