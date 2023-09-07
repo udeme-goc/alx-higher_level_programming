@@ -3,6 +3,7 @@
 Queen Chess challenge
 """
 
+
 def printSolution(board, n):
     for i in range(n):
         for j in range(n):
