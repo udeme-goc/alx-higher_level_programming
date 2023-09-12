@@ -1,8 +1,16 @@
 #!/usr/bin/python3
+"""
+This module extends the BaseGeometry class to include an area method.
+"""
+
 
 class BaseGeometry:
-    """Class representing a base geometry."""
-    
+    """
+    A base class for geometry operations.
+    """
+
     def area(self):
-        """Raises an Exception with the message 'area() is not implemented'."""
+        """
+        Calculate the area (not implemented).
+        """
         raise Exception("area() is not implemented")
