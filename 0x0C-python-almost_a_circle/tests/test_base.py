@@ -1,6 +1,7 @@
 import unittest
 from models.base import Base
 
+
 class TestBase(unittest.TestCase):
     def test_constructor(self):
         b = Base()
@@ -16,6 +17,7 @@ class TestBase(unittest.TestCase):
         base_instance = Base()
         with self.assertRaises(AttributeError):
             print(base_instance.__nb_objects)
+
 
 if __name__ == "__main__":
     unittest.main()

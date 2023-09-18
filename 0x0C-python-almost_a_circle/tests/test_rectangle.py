@@ -3,6 +3,7 @@ from models.rectangle import Rectangle
 from io import StringIO
 import sys
 
+
 class TestRectangle(unittest.TestCase):
     def test_constructor(self):
         # Test if the constructor initializes attributes correctly
@@ -92,6 +93,7 @@ class TestRectangle(unittest.TestCase):
 
         r = Rectangle(5, 5, 1)
         self.assertEqual(str(r), "[Rectangle] (1) 1/0 - 5/5")
+
 
 if __name__ == "__main__":
     unittest.main()
