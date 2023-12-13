@@ -1,6 +1,4 @@
 -- Create `second_table` and inserts records.
-USE hbtn_0c_0;
-
 CREATE TABLE IF NOT EXISTS second_table (
 	id INT,
 	name VARCHAR(256),
