@@ -5,7 +5,7 @@
 import sys
 from model_state import Base, State
 
-from sqlalchemy import create_engine
+from sqlalchemy import (create_engine)
 
 if __name__ == "__main__":
     # Create a connection to the MySQL database using SQLAlchemy
