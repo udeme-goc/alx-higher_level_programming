@@ -3,6 +3,7 @@
 This module contains a function to find a peak in a list of unsorted integers.
 """
 
+
 def find_peak(list_of_integers):
     """
     Find a peak in a list of unsorted integers.
@@ -34,6 +35,7 @@ def find_peak(list_of_integers):
 
     # Return the peak element
     return list_of_integers[low]
+
 
 # Test the function
 if __name__ == "__main__":
