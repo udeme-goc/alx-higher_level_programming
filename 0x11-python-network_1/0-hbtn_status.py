@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Fetches the status of https://alx-intranet.hbtn.io.
+"""
+
+
 import urllib.request
 
 

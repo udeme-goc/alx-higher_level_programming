@@ -17,14 +17,21 @@ def get_response(url):
     Returns:
         requests.Response: The response object.
     """
-    return requests.get(url)
+    try:
+        response = requests.get(url)
+        response.raise_for_status()     # Raise HTTPError fir bad status codes
+        return response
+    except requests.exceptions.HTTPError as e:
+        return e
 
 
 if __name__ == "__main__":
     url = sys.argv[1]
     response = get_response(url)
 
-    print(response.text)
-
-    if response.status_code >= 400:
-        print("Error code:", response.status_code)
+    if isinstance(response, requests.exceptions.HTTPError):
+        # If an HTTP error occurs, print the error code
+        print("Error code:", response.response.status_code)
+    else:
+        # Display the body of the response
+        print(response.text)

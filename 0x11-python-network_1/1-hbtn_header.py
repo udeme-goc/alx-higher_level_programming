@@ -2,7 +2,7 @@
 """
 Sends a request to a URL and displays the value of the X-Request-Id header.
 """
-import requests
+import urllib.request
 import sys
 
 
@@ -17,8 +17,10 @@ def get_x_request_id(url):
     Returns:
         str: The value of the X-Request-Id header.
     """
-    response = requests.get(url)
-    return response.headers.get('X-Request-Id')
+    with urllib.request.urlopen(url) as response:
+        # Retrieve the X-Request-Id header from the response
+        x_request_id = response.headers.get('X-Request-Id')
+        return x_request_id
 
 
 if __name__ == "__main__":
